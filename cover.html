@@ -12,7 +12,7 @@
         }
         html, body {
             width: 100%;
-            height: 80%;
+            height: 100%;
             font-family: Arial, sans-serif;
             background: url('background.jpg') no-repeat center center/cover; /* Placeholder for background image */
             display: flex;
@@ -23,26 +23,27 @@
             flex-direction: column;
         }
         .container {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 40px;
-    border-radius: 10px;
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
         h1 {
-            font-size: 3em;
-            margin-bottom: 50px;
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px;
         }
         .btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 8px 16px;
-            font-size: 1em;
+            padding: 12px 24px;
+            font-size: 1.2em;
             color: white;
             background: #007BFF;
             border: none;
@@ -59,10 +60,12 @@
 <body>
     <div class="container">
         <h1>Welcome to Maths Point</h1>
-        <a href="learn-more.html" class="btn">Learn More</a>
-        <a href="alumni-info.html" class="btn">Alumni Info</a>
-        <a href="contact-info.html" class="btn">Contact Info</a>
-        <a href="login-signup.html" class="btn">Login/Signup</a>
+        <div class="button-container">
+            <a href="learn-more.html" class="btn">Learn More</a>
+            <a href="alumni-info.html" class="btn">Alumni Info</a>
+            <a href="contact-info.html" class="btn">Contact Info</a>
+            <a href="login-signup.html" class="btn">Login/Signup</a>
+        </div>
     </div>
 </body>
 </html>
