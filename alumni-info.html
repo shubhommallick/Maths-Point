@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Info - Maths Point</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+        .alumni-list {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .alumni {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .admin-section {
+            margin-top: 20px;
+        }
+        .admin-btn {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none; /* Hidden by default */
+        }
+        .admin-btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Alumni</h1>
+        <div class="alumni-list">
+            <div class="alumni">
+                <h3>John Doe</h3>
+                <p>Software Engineer at Google</p>
+            </div>
+            <div class="alumni">
+                <h3>Jane Smith</h3>
+                <p>Data Scientist at Microsoft</p>
+            </div>
+            <div class="alumni">
+                <h3>Michael Johnson</h3>
+                <p>AI Researcher at OpenAI</p>
+            </div>
+        </div>
+
+        <!-- Admin-only Section -->
+        <div class="admin-section">
+            <button class="admin-btn" id="addAlumniBtn">Add Alumni</button>
+        </div>
+    </div>
+
+    <script>
+        // Simulate user authentication
+        const userRole = "admin"; // Change this to "user" to hide the button
+
+        // Show Add Alumni button if the user is an admin
+        if (userRole === "admin") {
+            document.getElementById("addAlumniBtn").style.display = "block";
+        }
+    </script>
+</body>
+</html>
